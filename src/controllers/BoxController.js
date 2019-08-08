@@ -6,6 +6,22 @@ class BoxController {
     return res.json(box);
   }
 
+  async getAll(req, res){
+    return res.json(
+      await Box.find({}, (errs, boxs) => {
+        res.json({ data: boxs });
+      })
+    );
+  }
+
+  async deleteBox() {
+    const post = await Post.findById(req.params.id);
+
+    await post.remove();
+  
+    return res.send();
+  }
+
   async show(req, res) {
     return res.json(
       await Box.findById(req.params.id).populate({
