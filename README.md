@@ -1,4 +1,4 @@
-# RocketBox API
+# Server DropBox API
 
 Esta API foi desenvolvida durante a semana omnistack da [Rocketseat](https://rocketseat.com.br/), a API disponibiliza para as aplicações que a consumirem
 a possíbilidade de criação de boxes (pastas) e upload de arquivos dentro das boxes criadas.
@@ -26,11 +26,3 @@ __POST__
 
 __GET__
   - `/boxes/:boxId`
-
-### Subindo a aplicação
-
-* Clone o projeto `git clone https://github.com/gabrielmq/omnistack-backend.git`.
-* Acesse o diretório do projeto pelo prompt de comandos.
-* Execute o comando `npm install` ou `yarn install` na raiz do diretório, para que as dependências sejam baixadas.
-* Antes de iniciar a aplicação, substitua a url de conexão do MongoDB para a url de conexão do MongoDB instalado em seu ambiente.
-* Execute o comando `npm start` ou `yarn start` para iniciar a aplicação.
