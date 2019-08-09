@@ -14,7 +14,9 @@ routes.get("/boxes/:id", BoxController.show);
 
 routes.get("/boxes", BoxController.getAll);
 
-routes.delete('/boxes', BoxController.deleteBox);
+routes.delete("/boxes", BoxController.deleteBox);
+
+routes.get("/files/:id", FileController.getFiles);
 
 routes.post(
   "/boxes/:id/files",
@@ -23,5 +25,6 @@ routes.post(
 );
 
 // exporta alguma informação do arquivo
+
 // no caso routes
 module.exports = routes;
